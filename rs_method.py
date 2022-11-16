@@ -1,9 +1,6 @@
 import numpy as np
 from scipy.optimize import leastsq
 
-## data 第一列为真值，后面所有列为特征
-## initialTheta 估算的权值初值
-## featureNum 特征的个数
 def RLS_Fun(data, initialTheta, featureNum):
     theta_list = [[] for i in np.arange(featureNum)]
     Theta = initialTheta
